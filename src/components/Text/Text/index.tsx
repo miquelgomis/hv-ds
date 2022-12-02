@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { sizes } from '../../../interfaces/commons';
 import Styles from './index.module.scss';
 
 export interface TextProps {
@@ -6,7 +7,7 @@ export interface TextProps {
   children: React.ReactElement;
   Tag?: 'p' | 'div';
   italic?: boolean;
-  size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl'
+  size?: sizes;
 }
 
 const Text: FC<TextProps> = ({

@@ -1,13 +1,14 @@
 import React, { FC } from 'react';
+import { styles } from '../../../interfaces/commons';
 import Styles from './index.module.scss';
 
 export interface ModalBackgroundProps {
-  style: "light" | "dark"
+  color: styles
 }
 
-const ModalBackground: FC<ModalBackgroundProps> = ({ style = "light" }) => {
+const ModalBackground: FC<ModalBackgroundProps> = ({ color = "light" }) => {
   return (
-    <div className={`${Styles.modalbackground} ${Styles[style]}`} />
+    <div className={`${Styles.modalbackground} ${Styles[color]}`} />
   );
 };
 
