@@ -14,7 +14,8 @@ export const Primary = Template.bind({});
 Primary.args = {
   title: 'Hotelverse',
   Tag: 'h1',
-  size: "base",
+  size: "m",
   className: '',
-  underline: false
+  underline: false,
+  color: "primary"
 };

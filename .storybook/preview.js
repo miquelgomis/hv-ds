@@ -1,3 +1,4 @@
+import '../src/styles/theme.css';
 import '../src/styles/tailwind.css';
 
 export const parameters = {
