@@ -3,12 +3,12 @@ import Styles from './index.module.scss';
 
 export interface ButtonProps {
   label: string;
-  style: 'primary' | 'secondary';
+  color?: 'primary' | 'secondary';
 }
 
-const Button: FC<ButtonProps> = ({ label, style }) => {
+const Button: FC<ButtonProps> = ({ label, color = "primary" }) => {
   return (
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <button className={`${color ? "bg-" + color : ''} text-white font-bold py-2 px-4 rounded`}>
       {label}
     </button>
   );

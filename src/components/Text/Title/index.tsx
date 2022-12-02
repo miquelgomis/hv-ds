@@ -5,8 +5,8 @@ export interface TitleProps {
   className?: string;
   title: string;
   Tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'div';
-  size?: 'xs' | 'x' | 'm' | 'xl' | 'xxl';
-  color?: "primary" | "secondary";
+  size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl';
+  color?: 'primary' | 'secondary';
   underline?: boolean;
 }
 
@@ -16,13 +16,12 @@ const Title: FC<TitleProps> = ({
   size = 'm',
   className = '',
   underline = false,
-  color = "primary"
+  color = 'primary',
 }) => {
   return (
     <Tag
-      className={`${
-        Styles.title
-      } ${className} text-${size} text-${color} ${
+      className={`${Styles.title} ${className}
+      ${size ? 'text-' + size : ''} ${color ? 'text-' + color : ''} ${
         underline ? 'underline' : ''
       }`}
     >

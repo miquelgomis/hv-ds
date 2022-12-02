@@ -3,18 +3,20 @@ import Styles from './index.module.scss';
 
 export interface TextProps {
   className?: string;
-  text: string;
+  children: React.ReactElement;
   Tag?: 'p' | 'div';
   italic?: boolean;
+  size?: 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl'
 }
 
 const Text: FC<TextProps> = ({
   className = '',
-  text,
+  children = <></>,
   Tag = 'div',
   italic = false,
+  size = "m"
 }) => {
-  return <Tag className={`${Styles.text} ${className} ${italic ? 'italic' : ''}`}>{text}</Tag>;
+  return <Tag className={`${Styles.text} ${className} text-${size} ${italic ? 'italic' : ''}`}>{children}</Tag>;
 };
 
 export default Text;
