@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Title, { TitleProps } from './../../components/Text/Title/index.tsx';
+import Title, { TitleProps } from './../../components/Text/Title';
 
 export default {
   title: 'Text/Title',

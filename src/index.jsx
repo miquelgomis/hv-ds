@@ -2,14 +2,43 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/theme.css';
 import './tailwind/tailwind.css';
-import Title from './components/Text/Title/index.tsx';
-import Text from './components/Text/Text/index.tsx';
-import Wrapper from './components/Layout/Wrapper/index.tsx';
+import Title from './components/Text/Title';
+import Text from './components/Text/Text';
+import Wrapper from './components/Layout/Wrapper';
+import Modal from './components/Modals/Modal';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Wrapper>
+
+      <Modal>
+        <Title
+          title="Modal Example"
+        />
+        <Text>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Phasellus a nisl posuere dui iaculis tempor eu porta dolor.
+            Suspendisse sodales luctus ipsum vel fermentum. Curabitur vel
+            enim hendrerit, tincidunt justo sit amet, luctus nisl. Vivamus
+            accumsan lectus sagittis purus cursus euismod ac et metus.
+            Vestibulum fermentum sem neque. In convallis massa vel aliquam
+            viverra. Nulla lacinia dolor eu quam condimentum, in fringilla
+            mauris feugiat. Ut non quam in arcu egestas semper. Nam at
+            volutpat velit. Sed auctor turpis in rhoncus tincidunt. Sed
+            sapien felis, faucibus sit amet posuere sed, scelerisque vitae
+            metus. Nulla magna lectus, scelerisque sit amet placerat non,
+            pellentesque ut arcu. Aenean tristique vestibulum urna id
+            commodo. Sed sollicitudin ante quis sollicitudin hendrerit.
+            Duis a ipsum eget eros consequat feugiat.
+          </p>
+        </Text>
+      </Modal>
+
+
+
+
       <Title
         title="Hotelverse Design System"
         size={'text-xxl'}

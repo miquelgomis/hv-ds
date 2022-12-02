@@ -1,0 +1,37 @@
+@import "/src/styles/animations.scss";
+@import "/src/styles/shadows.scss";
+
+.modal {
+  &,
+  &__aux {
+    display: block;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__aux {
+    animation-name: fadeInBottomToTop;
+    animation-iteration-count: 1;
+    animation-duration: 350ms;
+  }
+
+  &__content {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 1em;
+    width: 600px;
+    z-index: 2;
+
+    box-shadow: $box-shadow;
+  }
+}

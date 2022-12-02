@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button, { ButtonProps } from './../../components/Forms/Button/index.tsx';
+import Button, { ButtonProps } from './../../components/Forms/Button';
 
 export default {
   title: 'Forms/Button',
