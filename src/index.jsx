@@ -7,6 +7,7 @@ import Text from './components/Text/Text';
 import Wrapper from './components/Layout/Wrapper';
 import Modal from './components/Modals/Modal';
 import Button from './components/Forms/Button';
+import Image from './components/Multimedia/Image';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
           </>}
         >
           <Title title="Modal Example" size={"xxl"} />
+          <Image src="https://via.placeholder.com/800x600" alt="Hotelverse" />
           <Text>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
