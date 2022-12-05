@@ -2,7 +2,7 @@ import React from 'react';
 
 import Text, {
   TextProps,
-} from './../../components/Text/Text';
+} from './index.tsx';
 
 export default {
   title: 'Text/Text',

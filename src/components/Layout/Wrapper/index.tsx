@@ -3,11 +3,12 @@ import Styles from './index.module.scss';
 
 export interface WrapperProps {
   children: React.ReactElement;
+  width?: number;
 }
 
-const Wrapper: FC<WrapperProps> = ({ children }) => {
+const Wrapper: FC<WrapperProps> = ({ children, width = 1200 }) => {
   return (
-    <div className={Styles.wrapper}>
+    <div className={Styles.wrapper} style={{ maxWidth: width }}>
       {children}
     </div>
   );

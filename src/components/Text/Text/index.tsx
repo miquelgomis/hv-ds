@@ -17,7 +17,7 @@ const Text: FC<TextProps> = ({
   italic = false,
   size = "m"
 }) => {
-  return <Tag className={`${Styles.text} ${className} text-${size} ${italic ? 'italic' : ''}`}>{children}</Tag>;
+  return <Tag className={`${Styles.text} ${className} text-${size} ${italic ? 'italic' : ''}`} data-testid="title">{children}</Tag>;
 };
 
 export default Text;
