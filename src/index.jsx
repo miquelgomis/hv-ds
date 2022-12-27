@@ -9,6 +9,14 @@ import Modal from './components/Modals/Modal';
 import Button from './components/Forms/Button';
 import Image from './components/Multimedia/Image';
 
+export * from "./components/Forms/Button";
+export * from "./components/Layout/Wrapper"
+export * from "./components/Modals/Modal";
+export * from "./components/Modals/ModalBackground";
+export * from "./components/Multimedia/Image";
+export * from "./components/Text/Text";
+export * from "./components/Text/Title";
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -97,3 +105,4 @@ root.render(
     </Wrapper>
   </React.StrictMode>
 );
+
